@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Stadtfest Wohlen 2027 — 150 Jahre Geschichte. 18.–20. September 2027 in Wohlen AG.">
+<title>Stadtfest Wohlen 2027 — 150 Jahre</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:#e2e2f0;background:#07071a;overflow-x:hidden;min-height:100vh}
+
+:root{
+  --red:#CC1A2E;--red-g:rgba(204,26,46,.4);--red-d:rgba(204,26,46,.18);
+  --ice:#A8D8EA;--ice-g:rgba(168,216,234,.25);--ice-d:rgba(168,216,234,.12);
+  --gold:#F5C842;--gold-g:rgba(245,200,66,.3);--gold-d:rgba(245,200,66,.12);
+  --g1:rgba(255,255,255,.04);--g2:rgba(255,255,255,.07);--g3:rgba(255,255,255,.11);--g4:rgba(255,255,255,.18);
+  --gb:rgba(255,255,255,.13);--gb2:rgba(255,255,255,.24);
+  --sh:0 8px 32px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.11);
+  --sh2:0 24px 64px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.17);
+  --r1:10px;--r2:18px;--r3:24px;--r4:36px;--rp:9999px;
+  --tr:all .33s cubic-bezier(.4,0,.2,1);
+  --fd:'Outfit',sans-serif;--fb:'DM Sans',sans-serif
+}
+
+/* BG */
+.bg-scene{position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% -10%,#120b38 0%,#07071a 55%,#0a0312 100%);overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(110px);animation:drift 28s ease-in-out infinite}
+.o1{width:650px;height:650px;background:radial-gradient(circle,rgba(76,29,149,.65),transparent 70%);top:-180px;left:-120px;animation-duration:28s}
+.o2{width:550px;height:550px;background:radial-gradient(circle,rgba(29,78,216,.6),transparent 70%);top:25%;right:-80px;animation-duration:34s;animation-delay:-10s;animation-direction:reverse}
+.o3{width:420px;height:420px;background:radial-gradient(circle,rgba(109,40,217,.45),transparent 70%);bottom:5%;left:25%;animation-duration:22s;animation-delay:-18s}
+.o4{width:320px;height:320px;background:radial-gradient(circle,rgba(204,26,46,.3),transparent 70%);top:55%;right:18%;animation-duration:38s;animation-delay:-6s;animation-direction:reverse}
+.o5{width:280px;height:280px;background:radial-gradient(circle,rgba(168,216,234,.18),transparent 70%);top:15%;left:45%;animation-duration:45s;animation-delay:-25s}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(70px,-50px) scale(1.08)}50%{transform:translate(-35px,70px) scale(.93)}75%{transform:translate(55px,35px) scale(1.04)}}
+
+/* GLASS */
+.glass{background:var(--g2);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1px solid var(--gb);box-shadow:var(--sh)}
+.glass-s{background:var(--g3);backdrop-filter:blur(36px) saturate(200%);-webkit-backdrop-filter:blur(36px) saturate(200%);border:1px solid var(--gb2);box-shadow:var(--sh2)}
+
+/* CARD */
+.card{background:var(--g2);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border:1px solid var(--gb);box-shadow:var(--sh);border-radius:var(--r3);transition:var(--tr);position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.055) 0%,transparent 55%);pointer-events:none;z-index:0}
+.card::after{content:'';position:absolute;top:-50%;left:-65%;width:32%;height:200%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent);transform:skewX(-20deg);transition:left .7s ease;pointer-events:none;z-index:1}
+.card:hover{transform:translateY(-7px);box-shadow:var(--sh2),0 0 45px var(--ice-g);border-color:rgba(168,216,234,.28)}
+.card:hover::after{left:135%}
+.card>*{position:relative;z-index:2}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:var(--rp);font-family:var(--fd);font-weight:600;font-size:.92rem;cursor:pointer;border:none;transition:var(--tr);text-decoration:none;position:relative;overflow:hidden;letter-spacing:.01em;white-space:nowrap}
+.btn::after{content:'';position:absolute;top:-50%;left:-65%;width:32%;height:200%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);transform:skewX(-20deg);transition:left .6s ease}
+.btn:hover::after{left:135%}
+.btn-red{background:linear-gradient(135deg,var(--red),#9e0f1f);color:#fff;box-shadow:0 4px 18px var(--red-g),inset 0 1px 0 rgba(255,255,255,.15)}
+.btn-red:hover{box-shadow:0 8px 28px var(--red-g),0 0 55px rgba(204,26,46,.22);transform:translateY(-2px)}
+.btn-gl{background:var(--g3);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--gb2);color:#fff;box-shadow:var(--sh)}
+.btn-gl:hover{background:var(--g4);box-shadow:var(--sh2),0 0 28px var(--ice-g);transform:translateY(-2px)}
+.btn-sm{padding:9px 20px;font-size:.82rem}
+
+/* PILLS */
+.pill{display:inline-flex;align-items:center;gap:5px;padding:5px 13px;border-radius:var(--rp);font-size:.75rem;font-weight:700;font-family:var(--fd);letter-spacing:.04em;text-transform:uppercase}
+.pill-gl{background:var(--g3);backdrop-filter:blur(12px);border:1px solid var(--gb);color:var(--ice)}
+.pill-r{background:var(--red-d);border:1px solid rgba(204,26,46,.38);color:#ff7b8a}
+.pill-b{background:var(--ice-d);border:1px solid rgba(168,216,234,.32);color:var(--ice)}
+.pill-g{background:var(--gold-d);border:1px solid rgba(245,200,66,.32);color:var(--gold)}
+.pill-p{background:rgba(167,139,250,.14);border:1px solid rgba(167,139,250,.32);color:#a78bfa}
+.pill-gr{background:rgba(52,211,153,.14);border:1px solid rgba(52,211,153,.32);color:#34d399}
+.pill-o{background:rgba(251,146,60,.14);border:1px solid rgba(251,146,60,.32);color:#fb923c}
+
+/* TYPE */
+h1,h2,h3,h4,h5{font-family:var(--fd);font-weight:700;line-height:1.15}
+.tg{background:linear-gradient(135deg,#fff 0%,var(--ice) 55%,#fff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.tr{color:var(--red)}.tg2{color:var(--gold)}.ti{color:var(--ice)}.tm{color:rgba(255,255,255,.48)}
+
+/* LAYOUT */
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+section{padding:90px 0}
+.sec-hd{margin-bottom:56px}
+.sec-title{font-size:clamp(1.9rem,4vw,3rem);font-weight:700;letter-spacing:-.025em;margin-bottom:10px}
+.sec-sub{font-size:1rem;color:rgba(255,255,255,.5);line-height:1.72;max-width:580px}
+.divider{width:52px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--red),transparent);margin:14px 0 18px}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
+
+/* NAV */
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:15px 0;background:rgba(7,7,26,.35);backdrop-filter:blur(18px) saturate(180%);-webkit-backdrop-filter:blur(18px) saturate(180%);border-bottom:1px solid var(--gb);transition:all .4s ease}
+#nav.sc{padding:11px 0;background:rgba(7,7,26,.72);backdrop-filter:blur(40px) saturate(220%);-webkit-backdrop-filter:blur(40px) saturate(220%)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0}
+.nav-badge{width:38px;height:38px;background:linear-gradient(135deg,var(--red),#8b0a1a);border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-weight:900;font-size:.78rem;color:#fff;box-shadow:0 4px 14px var(--red-g);letter-spacing:.02em}
+.nav-lt{font-family:var(--fd);font-weight:700;font-size:.95rem;color:#fff;line-height:1.2}
+.nav-ls{font-size:.68rem;color:rgba(255,255,255,.42);font-weight:400;display:block}
+.nav-links{display:flex;align-items:center;gap:2px;list-style:none}
+.nav-links a{padding:8px 14px;border-radius:var(--rp);color:rgba(255,255,255,.65);text-decoration:none;font-size:.88rem;font-weight:500;transition:var(--tr)}
+.nav-links a:hover{color:#fff;background:var(--g2)}
+.nav-cta{background:linear-gradient(135deg,var(--red),#9e0f1f) !important;color:#fff !important;box-shadow:0 3px 14px var(--red-g)}
+.nav-cta:hover{box-shadow:0 6px 22px var(--red-g) !important}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:var(--g2);border:1px solid var(--gb);border-radius:9px}
+.ham span{display:block;width:20px;height:2px;background:#fff;border-radius:2px;transition:var(--tr)}
+.nav-mob{display:none;flex-direction:column;gap:3px;padding:14px 20px;border-top:1px solid var(--gb);margin-top:10px}
+.nav-mob.op{display:flex}
+.nav-mob a{padding:11px 14px;border-radius:var(--r2);color:rgba(255,255,255,.75);text-decoration:none;font-size:.95rem;font-weight:500;transition:var(--tr)}
+.nav-mob a:hover{color:#fff;background:var(--g2)}
+
+/* HERO */
+#home{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 0 80px;text-align:center}
+.hero-box{background:var(--g2);backdrop-filter:blur(28px) saturate(180%);-webkit-backdrop-filter:blur(28px) saturate(180%);border:1px solid var(--gb);border-radius:var(--r4);padding:68px 60px;max-width:880px;width:100%;box-shadow:0 40px 100px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.11),0 0 90px rgba(76,29,149,.18);position:relative;overflow:hidden}
+.hero-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.38),transparent)}
+.hero-box::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.1),transparent)}
+.hero-tag{display:inline-flex;align-items:center;gap:7px;padding:7px 18px;background:var(--red-d);border:1px solid rgba(204,26,46,.32);border-radius:var(--rp);color:#ff8090;font-size:.78rem;font-weight:700;font-family:var(--fd);letter-spacing:.05em;text-transform:uppercase;margin-bottom:26px}
+.hero-tag::before{content:'';width:6px;height:6px;background:#ff3348;border-radius:50%;box-shadow:0 0 8px rgba(255,51,72,.9);animation:blink 2.2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.65)}}
+.hero-h{font-family:var(--fd);font-weight:900;font-size:clamp(3rem,8.5vw,5.8rem);letter-spacing:-.045em;line-height:1;margin-bottom:6px;background:linear-gradient(135deg,#fff 0%,rgba(255,255,255,.9) 35%,var(--ice) 65%,rgba(255,255,255,.95) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-y{font-family:var(--fd);font-size:clamp(.9rem,2.2vw,1.3rem);font-weight:300;color:rgba(255,255,255,.38);letter-spacing:.32em;text-transform:uppercase;margin-bottom:22px}
+.hero-p{font-size:clamp(.95rem,2.2vw,1.2rem);color:rgba(255,255,255,.58);line-height:1.65;max-width:560px;margin:0 auto 44px}
+.countdown{display:flex;justify-content:center;gap:14px;margin-bottom:44px;flex-wrap:wrap}
+.cd-b{background:var(--g2);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--gb);border-radius:var(--r2);padding:18px 22px;min-width:86px;text-align:center;box-shadow:0 4px 18px rgba(0,0,0,.3),0 0 28px var(--ice-g),inset 0 1px 0 rgba(255,255,255,.1);transition:var(--tr)}
+.cd-b:hover{box-shadow:0 8px 28px rgba(0,0,0,.4),0 0 50px var(--ice-g);transform:translateY(-4px)}
+.cd-n{font-family:var(--fd);font-size:2.4rem;font-weight:800;color:#fff;letter-spacing:-.04em;display:block;line-height:1;text-shadow:0 0 28px var(--ice-g)}
+.cd-l{font-size:.65rem;font-weight:700;color:var(--ice);text-transform:uppercase;letter-spacing:.1em;margin-top:5px;display:block}
+.hero-btns{display:flex;justify-content:center;gap:11px;flex-wrap:wrap}
+
+/* STATS */
+#stats{padding:70px 0}
+.stats-g{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.stat-c{text-align:center;padding:34px 20px}
+.stat-n{font-family:var(--fd);font-size:2.9rem;font-weight:800;color:#fff;letter-spacing:-.04em;line-height:1;display:block}
+.stat-sf{color:var(--gold)}
+.stat-l{font-size:.88rem;color:rgba(255,255,255,.48);margin-top:7px;font-weight:500}
+
+/* FEATURES */
+#features{padding:70px 0}
+.feat-g{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.feat-c{padding:38px 30px}
+.feat-ic{width:60px;height:60px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.7rem;margin-bottom:22px;flex-shrink:0}
+.feat-c h3{font-size:1.28rem;margin-bottom:10px;color:#fff}
+.feat-c p{color:rgba(255,255,255,.5);line-height:1.7;font-size:.93rem}
+.feat-tag{margin-top:18px}
+
+/* MAP */
+#map{padding:70px 0}
+.map-wrap{background:var(--g1);border:1px solid var(--gb);border-radius:var(--r4);overflow:hidden;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.map-ctrl{padding:20px 26px;border-bottom:1px solid var(--gb);display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.mfb{padding:7px 16px;border-radius:var(--rp);font-size:.79rem;font-weight:700;font-family:var(--fd);cursor:pointer;border:1px solid var(--gb);background:transparent;color:rgba(255,255,255,.55);transition:var(--tr);letter-spacing:.02em}
+.mfb:hover,.mfb.act{background:var(--g3);color:#fff;border-color:rgba(255,255,255,.28)}
+.mfb[data-f="musik"].act{background:rgba(167,139,250,.18);border-color:rgba(167,139,250,.38);color:#a78bfa}
+.mfb[data-f="gastro"].act{background:rgba(251,146,60,.18);border-color:rgba(251,146,60,.38);color:#fb923c}
+.mfb[data-f="sport"].act{background:rgba(52,211,153,.18);border-color:rgba(52,211,153,.38);color:#34d399}
+.mfb[data-f="info"].act{background:var(--ice-d);border-color:rgba(168,216,234,.38);color:var(--ice)}
+.mfb[data-f="kinder"].act{background:var(--gold-d);border-color:rgba(245,200,66,.38);color:var(--gold)}
+.map-svg-wrap{position:relative;padding:28px;background:rgba(4,4,18,.65)}
+.map-svg-wrap svg{width:100%;height:auto;display:block}
+.map-tip{position:absolute;z-index:50;background:rgba(8,8,28,.96);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--gb2);border-radius:var(--r2);padding:12px 16px;min-width:150px;box-shadow:0 8px 28px rgba(0,0,0,.55);pointer-events:none;opacity:0;transform:translateY(5px);transition:all .2s ease}
+.map-tip.vis{opacity:1;transform:translateY(0)}
+.map-tip-t{font-family:var(--fd);font-weight:700;font-size:.88rem;color:#fff;margin-bottom:3px}
+.map-tip-d{font-size:.75rem;color:rgba(255,255,255,.5)}
+
+/* PROGRAMM */
+#programm{padding:70px 0}
+.tabs-bar{display:flex;gap:3px;background:var(--g1);border:1px solid var(--gb);border-radius:var(--rp);padding:4px;width:fit-content;margin-bottom:36px}
+.tab-btn{padding:9px 22px;border-radius:var(--rp);border:none;background:transparent;color:rgba(255,255,255,.5);font-family:var(--fd);font-weight:700;font-size:.87rem;cursor:pointer;transition:var(--tr)}
+.tab-btn.act{background:var(--g3);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.1)}
+.tab-panel{display:none}.tab-panel.act{display:block}
+.prog-list{display:flex;flex-direction:column;gap:10px}
+.prog-item{display:grid;grid-template-columns:76px 1fr auto;gap:18px;align-items:center;padding:16px 22px;background:var(--g1);border:1px solid var(--gb);border-radius:var(--r2);transition:var(--tr)}
+.prog-item:hover{background:var(--g2);border-color:rgba(255,255,255,.19)}
+.prog-time{font-family:var(--fd);font-size:.95rem;font-weight:700;color:var(--ice)}
+.prog-title{font-weight:600;font-size:.93rem;color:#fff;margin-bottom:2px}
+.prog-loc{font-size:.77rem;color:rgba(255,255,255,.4)}
+
+/* ACTIVITIES */
+#aktivitaeten{padding:70px 0}
+.filter-bar{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:36px}
+.fp{padding:8px 18px;border-radius:var(--rp);background:var(--g1);border:1px solid var(--gb);color:rgba(255,255,255,.55);font-family:var(--fd);font-weight:700;font-size:.79rem;cursor:pointer;transition:var(--tr);letter-spacing:.02em}
+.fp:hover,.fp.act{background:var(--g3);color:#fff;border-color:rgba(255,255,255,.28)}
+.act-g{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.act-c{padding:26px 22px;cursor:pointer}
+.act-em{font-size:2rem;margin-bottom:14px;display:block}
+.act-c h3{font-size:1.05rem;margin-bottom:7px;color:#fff}
+.act-c p{font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.6;margin-bottom:14px}
+.act-meta span{font-size:.75rem;color:rgba(255,255,255,.35);display:flex;align-items:center;gap:5px;margin-bottom:3px}
+
+/* FORMS */
+#anmeldung{padding:70px 0}
+.form-wrap{padding:44px 40px}
+.form-g{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fg{display:flex;flex-direction:column;gap:7px}
+.fg.full{grid-column:1/-1}
+.fl{font-size:.8rem;font-weight:700;color:rgba(255,255,255,.55);letter-spacing:.03em;font-family:var(--fd)}
+.fi,.fs,.ft{background:var(--g1);border:1px solid var(--gb);border-radius:var(--r1);padding:13px 15px;color:#fff;font-family:var(--fb);font-size:.92rem;transition:all .3s ease;outline:none;width:100%}
+.fi::placeholder,.ft::placeholder{color:rgba(255,255,255,.22)}
+.fi:focus,.fs:focus,.ft:focus{border-color:var(--ice);background:rgba(168,216,234,.04);box-shadow:0 0 0 3px rgba(168,216,234,.1),0 0 18px rgba(168,216,234,.08)}
+.fs{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7'%3E%3Cpath d='M1 1l4.5 4.5L10 1' stroke='rgba(255,255,255,.35)' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+.fs option{background:#12122e;color:#fff}
+.ft{resize:vertical;min-height:110px}
+.cbs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cb{display:flex;align-items:center;gap:7px;cursor:pointer;font-size:.82rem;color:rgba(255,255,255,.6)}
+.cb input{appearance:none;width:17px;height:17px;border:1px solid var(--gb);border-radius:5px;background:var(--g1);cursor:pointer;flex-shrink:0;position:relative;transition:var(--tr)}
+.cb input:checked{background:var(--red-d);border-color:var(--red)}
+.cb input:checked::after{content:'✓';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:10px;color:#ff7b8a}
+.stepper{display:flex;align-items:center;background:var(--g1);border:1px solid var(--gb);border-radius:var(--r1);overflow:hidden}
+.stb{padding:13px 16px;background:transparent;border:none;color:rgba(255,255,255,.65);font-size:1.1rem;cursor:pointer;transition:var(--tr)}
+.stb:hover{background:var(--g2);color:#fff}
+.stv{flex:1;text-align:center;color:#fff;font-weight:700;font-family:var(--fd);font-size:1rem;min-width:36px}
+.stv-hidden{display:none}
+.form-ok{display:none;text-align:center;padding:44px 20px}
+.form-ok.vis{display:block}
+.ok-ic{width:68px;height:68px;background:rgba(52,211,153,.18);border:2px solid rgba(52,211,153,.38);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.9rem;margin:0 auto 22px;animation:pop .5s cubic-bezier(.34,1.56,.64,1)}
+@keyframes pop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+.ok-t{font-family:var(--fd);font-size:1.55rem;font-weight:700;color:#fff;margin-bottom:10px}
+.ok-p{color:rgba(255,255,255,.5);font-size:.93rem;line-height:1.65}
+
+/* CONTACT */
+#kontakt{padding:70px 0}
+.cont-g{display:grid;grid-template-columns:1fr 1.5fr;gap:28px}
+.cont-info{padding:36px}
+.ci-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid var(--gb)}
+.ci-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ci-ic{width:42px;height:42px;border-radius:11px;background:var(--g2);border:1px solid var(--gb);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.ci-lbl{font-size:.72rem;color:rgba(255,255,255,.38);text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin-bottom:2px}
+.ci-val{font-size:.92rem;color:rgba(255,255,255,.82);font-weight:500}
+.cont-form{padding:36px}
+
+/* ABOUT */
+#ueber-uns{padding:70px 0}
+.about-g{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;margin-bottom:56px;align-items:center}
+.about-t p{color:rgba(255,255,255,.55);line-height:1.82;font-size:.97rem;margin-bottom:14px}
+.about-stats{display:flex;gap:20px;margin-top:28px}
+.as-c{text-align:center;padding:18px;flex:1}
+.as-n{font-family:var(--fd);font-size:1.9rem;font-weight:800;color:#fff;letter-spacing:-.03em;display:block}
+.as-l{font-size:.75rem;color:rgba(255,255,255,.4);margin-top:3px}
+.team-g{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.team-c{padding:26px 22px;text-align:center}
+.team-av{width:68px;height:68px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:1.3rem;font-weight:800;color:#fff;position:relative}
+.team-av::after{content:'';position:absolute;inset:-3px;border-radius:50%;z-index:-1;animation:spin 9s linear infinite}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.team-n{font-family:var(--fd);font-weight:700;font-size:.97rem;color:#fff;margin-bottom:3px}
+.team-r{font-size:.78rem;color:var(--ice);font-weight:500}
+
+/* FOOTER */
+footer{background:rgba(4,4,18,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid var(--gb);padding:56px 0 0}
+.foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;padding-bottom:44px;border-bottom:1px solid var(--gb)}
+.foot-brand p{font-size:.87rem;color:rgba(255,255,255,.4);line-height:1.7;margin-top:10px;max-width:240px}
+.foot-col h4{font-family:var(--fd);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:rgba(255,255,255,.42);margin-bottom:14px}
+.foot-col ul{list-style:none}
+.foot-col ul li{margin-bottom:9px}
+.foot-col ul a,.foot-col ul button{color:rgba(255,255,255,.5);text-decoration:none;font-size:.87rem;transition:color .2s;background:none;border:none;cursor:pointer;font-family:var(--fb);padding:0}
+.foot-col ul a:hover,.foot-col ul button:hover{color:var(--ice)}
+.sponsors{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.sp-b{padding:7px 14px;background:var(--g1);border:1px solid var(--gb);border-radius:var(--r1);font-size:.77rem;font-weight:600;color:rgba(255,255,255,.45);transition:var(--tr)}
+.sp-b:hover{color:#fff;background:var(--g2)}
+.soc{display:flex;gap:9px;margin-top:10px}
+.soc a{width:38px;height:38px;border-radius:9px;background:var(--g2);border:1px solid var(--gb);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.55);text-decoration:none;font-size:.95rem;transition:var(--tr)}
+.soc a:hover{background:var(--g3);color:#fff}
+.foot-bot{padding:22px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.foot-cr{font-size:.8rem;color:rgba(255,255,255,.28)}
+.foot-leg{display:flex;gap:18px}
+.foot-leg button{font-size:.8rem;color:rgba(255,255,255,.32);background:none;border:none;cursor:pointer;font-family:var(--fb);transition:color .2s}
+.foot-leg button:hover{color:rgba(255,255,255,.65)}
+
+/* COOKIE */
+#cookie{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);width:calc(100% - 48px);max-width:620px;background:rgba(9,9,26,.94);backdrop-filter:blur(28px) saturate(180%);-webkit-backdrop-filter:blur(28px) saturate(180%);border:1px solid var(--gb2);border-radius:var(--r3);padding:22px 26px;z-index:2000;box-shadow:0 16px 50px rgba(0,0,0,.65);display:none;animation:slideup .4s cubic-bezier(.34,1.56,.64,1)}
+#cookie.vis{display:block}
+@keyframes slideup{from{transform:translateX(-50%) translateY(120%);opacity:0}to{transform:translateX(-50%) translateY(0);opacity:1}}
+.cook-t{font-size:.86rem;color:rgba(255,255,255,.6);line-height:1.65;margin-bottom:14px}
+.cook-t a{color:var(--ice);text-decoration:none}
+.cook-btns{display:flex;gap:9px;flex-wrap:wrap}
+
+/* MODALS */
+.modal-ov{position:fixed;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);z-index:3000;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .3s ease}
+.modal-ov.op{opacity:1;pointer-events:all}
+.modal-box{background:rgba(11,11,32,.97);backdrop-filter:blur(40px) saturate(200%);-webkit-backdrop-filter:blur(40px) saturate(200%);border:1px solid var(--gb2);border-radius:var(--r4);width:100%;max-width:700px;max-height:88vh;overflow-y:auto;box-shadow:0 40px 100px rgba(0,0,0,.75);transform:scale(.95) translateY(12px);transition:transform .35s cubic-bezier(.34,1.2,.64,1)}
+.modal-box.wide{max-width:900px}
+.modal-ov.op .modal-box{transform:scale(1) translateY(0)}
+.modal-hd{padding:26px 30px;border-bottom:1px solid var(--gb);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:rgba(11,11,32,.97);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);z-index:1;border-radius:var(--r4) var(--r4) 0 0}
+.modal-title{font-family:var(--fd);font-size:1.25rem;font-weight:700;color:#fff}
+.modal-x{width:34px;height:34px;border-radius:50%;background:var(--g2);border:1px solid var(--gb);color:rgba(255,255,255,.55);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:var(--tr)}
+.modal-x:hover{background:var(--g3);color:#fff}
+.modal-bd{padding:26px 30px 30px}
+.modal-bd h3{font-family:var(--fd);font-size:1.05rem;font-weight:700;color:#fff;margin:22px 0 9px}
+.modal-bd h3:first-child{margin-top:0}
+.modal-bd p{color:rgba(255,255,255,.55);font-size:.9rem;line-height:1.78;margin-bottom:10px}
+.modal-bd ul{padding-left:18px;margin-bottom:10px}
+.modal-bd ul li{color:rgba(255,255,255,.55);font-size:.9rem;line-height:1.78;margin-bottom:4px}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,.18)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .stats-g{grid-template-columns:repeat(2,1fr)}
+  .feat-g{grid-template-columns:repeat(2,1fr)}
+  .act-g{grid-template-columns:repeat(2,1fr)}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .about-g{grid-template-columns:1fr}
+  .cont-g{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  section{padding:60px 0}
+  .nav-links{display:none}
+  .ham{display:flex}
+  .hero-box{padding:44px 26px}
+  .feat-g,.team-g{grid-template-columns:1fr}
+  .form-g{grid-template-columns:1fr}
+  .fg.full{grid-column:1}
+  .cbs{grid-template-columns:1fr 1fr}
+  .foot-top{grid-template-columns:1fr;gap:28px}
+  .foot-bot{flex-direction:column;text-align:center}
+  .prog-item{grid-template-columns:65px 1fr}
+  .prog-item .pill{display:none}
+}
+@media(max-width:480px){
+  .countdown{gap:9px}
+  .cd-b{min-width:70px;padding:14px 14px}
+  .cd-n{font-size:1.9rem}
+  .stats-g{grid-template-columns:repeat(2,1fr)}
+  .hero-btns,.cook-btns{flex-direction:column;align-items:center}
+  .act-g{grid-template-columns:1fr}
+  .about-stats{flex-direction:column;gap:10px}
+}
+</style>
+</head>
+<body>
+
+<!-- BACKGROUND -->
+<div class="bg-scene">
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <div class="orb o3"></div><div class="orb o4"></div><div class="orb o5"></div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="container">
+    <div class="nav-in">
+      <a href="#home" class="nav-logo">
+        <div class="nav-badge">SW</div>
+        <div class="nav-lt">Stadtfest Wohlen<span class="nav-ls">18.–20. September 2027</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#programm">Programm</a></li>
+        <li><a href="#aktivitaeten">Aktivitäten</a></li>
+        <li><a href="#ueber-uns">Über uns</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#anmeldung" class="nav-cta">Anmeldung</a></li>
+      </ul>
+      <button class="ham" onclick="toggleMenu()" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mob" id="nav-mob">
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#programm" onclick="closeMenu()">Programm</a>
+      <a href="#aktivitaeten" onclick="closeMenu()">Aktivitäten</a>
+      <a href="#anmeldung" onclick="closeMenu()">Anmeldung</a>
+      <a href="#ueber-uns" onclick="closeMenu()">Über uns</a>
+      <a href="#kontakt" onclick="closeMenu()">Kontakt</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="container">
+    <div class="hero-box reveal">
+      <div class="hero-tag">150 Jahre Stadtjubiläum</div>
+      <div class="hero-h">Wohlen 2027</div>
+      <div class="hero-y">Seit 1877 · Wohlen AG · Schweiz</div>
+      <p class="hero-p">150 Jahre Geschichte — drei Tage gemeinsam feiern. Das grösste Stadtfest im Aargauer Freiamt lädt alle ein.</p>
+      <div class="countdown" id="countdown">
+        <div class="cd-b"><span class="cd-n" id="cd-d">---</span><span class="cd-l">Tage</span></div>
+        <div class="cd-b"><span class="cd-n" id="cd-h">--</span><span class="cd-l">Stunden</span></div>
+        <div class="cd-b"><span class="cd-n" id="cd-m">--</span><span class="cd-l">Minuten</span></div>
+        <div class="cd-b"><span class="cd-n" id="cd-s">--</span><span class="cd-l">Sekunden</span></div>
+      </div>
+      <div class="hero-btns">
+        <a href="#programm" class="btn btn-red">Programm ansehen</a>
+        <a href="#anmeldung" class="btn btn-gl">Jetzt anmelden</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-g">
+      <div class="card stat-c reveal"><span class="stat-n"><span class="counter" data-t="3">0</span></span><div class="stat-l">Festtage</div></div>
+      <div class="card stat-c reveal d1"><span class="stat-n"><span class="counter" data-t="100">0</span><span class="stat-sf">+</span></span><div class="stat-l">Aktivitäten</div></div>
+      <div class="card stat-c reveal d2"><span class="stat-n"><span class="counter" data-t="50">0</span><span class="stat-sf">+</span></span><div class="stat-l">Aussteller</div></div>
+      <div class="card stat-c reveal d3"><span class="stat-n"><span class="counter" data-t="20000">0</span><span class="stat-sf">+</span></span><div class="stat-l">Besucher</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container">
+    <div class="sec-hd reveal">
+      <span class="pill pill-gl">Das Programm</span>
+      <div class="divider"></div>
+      <h2 class="sec-title tg">Erlebe das Fest</h2>
+      <p class="sec-sub">Drei unvergessliche Tage voller Musik, Bewegung und kulinarischen Erlebnissen für die ganze Familie.</p>
+    </div>
+    <div class="feat-g">
+      <div class="card feat-c reveal">
+        <div class="feat-ic" style="background:rgba(167,139,250,.14);border:1px solid rgba(167,139,250,.24);">🎵</div>
+        <h3>Konzerte &amp; Musik</h3>
+        <p>Drei Bühnen mit lokalen und regionalen Bands — Blasmusik, Folk, Pop und Jazz. Von der Eröffnung bis zum grossen Abschlusskonzert erlebt ihr unvergessliche Musikmomente.</p>
+        <div class="feat-tag"><span class="pill pill-p">3 Bühnen</span></div>
+      </div>
+      <div class="card feat-c reveal d1">
+        <div class="feat-ic" style="background:rgba(52,211,153,.14);border:1px solid rgba(52,211,153,.24);">⚡</div>
+        <h3>Sport &amp; Bewegung</h3>
+        <p>Stadtlauf, Turniere und Mitmachaktionen für alle Altersgruppen. Bewegt euch gemeinsam und erlebt Sport als verbindende Kraft.</p>
+        <div class="feat-tag"><span class="pill pill-gr">Für alle</span></div>
+      </div>
+      <div class="card feat-c reveal d2">
+        <div class="feat-ic" style="background:rgba(251,146,60,.14);border:1px solid rgba(251,146,60,.24);">🍷</div>
+        <h3>Kulinarik &amp; Genuss</h3>
+        <p>Regionale Spezialitäten, Aargauer Weine und ein Produzenten-Markt mit lokalen Schätzen. Das Freiamt schmeckt — und zwar so richtig.</p>
+        <div class="feat-tag"><span class="pill pill-o">Regionale Küche</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section id="map">
+  <div class="container">
+    <div class="sec-hd reveal">
+      <span class="pill pill-gl">Orientierung</span>
+      <div class="divider"></div>
+      <h2 class="sec-title tg">Festgelände</h2>
+      <p class="sec-sub">Klicke auf die Pins, um Informationen zu den einzelnen Bereichen zu erhalten.</p>
+    </div>
+    <div class="map-wrap reveal">
+      <div class="map-ctrl">
+        <button class="mfb act" data-f="alle" onclick="filterMap('alle')">Alle</button>
+        <button class="mfb" data-f="musik" onclick="filterMap('musik')">🎵 Musik</button>
+        <button class="mfb" data-f="gastro" onclick="filterMap('gastro')">🍽 Gastronomie</button>
+        <button class="mfb" data-f="sport" onclick="filterMap('sport')">⚡ Sport</button>
+        <button class="mfb" data-f="kinder" onclick="filterMap('kinder')">🎠 Kinder</button>
+        <button class="mfb" data-f="info" onclick="filterMap('info')">ℹ Info</button>
+      </div>
+      <div class="map-svg-wrap" id="map-container">
+        <div class="map-tip" id="map-tip">
+          <div class="map-tip-t" id="tip-t"></div>
+          <div class="map-tip-d" id="tip-d"></div>
+        </div>
+        <svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" font-family="'DM Sans', sans-serif">
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M40 0L0 0 0 40" fill="none" stroke="rgba(255,255,255,.03)" stroke-width="1"/>
+            </pattern>
+            <filter id="glow-purple"><feGaussianBlur stdDeviation="3" result="blur"/><feComposite in="SourceGraphic" in2="blur" operator="over"/></filter>
+            <filter id="glow-orange"><feGaussianBlur stdDeviation="3" result="blur"/><feComposite in="SourceGraphic" in2="blur" operator="over"/></filter>
+            <filter id="glow-green"><feGaussianBlur stdDeviation="3" result="blur"/><feComposite in="SourceGraphic" in2="blur" operator="over"/></filter>
+            <filter id="glow-blue"><feGaussianBlur stdDeviation="3" result="blur"/><feComposite in="SourceGraphic" in2="blur" operator="over"/></filter>
+            <filter id="glow-gold"><feGaussianBlur stdDeviation="3" result="blur"/><feComposite in="SourceGraphic" in2="blur" operator="over"/></filter>
+          </defs>
+          <rect width="800" height="480" fill="rgba(4,4,18,.0)"/>
+          <rect width="800" height="480" fill="url(#grid)"/>
+          <!-- Boundary -->
+          <rect x="20" y="20" width="760" height="440" rx="18" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+          <!-- Walkways -->
+          <line x1="210" y1="20" x2="210" y2="460" stroke="rgba(255,255,255,.05)" stroke-width="2.5"/>
+          <line x1="20" y1="200" x2="780" y2="200" stroke="rgba(255,255,255,.05)" stroke-width="2.5"/>
+          <line x1="530" y1="20" x2="530" y2="460" stroke="rgba(255,255,255,.04)" stroke-width="1.5"/>
+          <line x1="20" y1="340" x2="780" y2="340" stroke="rgba(255,255,255,.03)" stroke-width="1.5"/>
+          <!-- Zone: Ausstellerzone -->
+          <rect x="40" y="38" width="720" height="72" rx="10" fill="rgba(168,216,234,.05)" stroke="rgba(168,216,234,.14)" stroke-width="1"/>
+          <text x="400" y="80" text-anchor="middle" fill="rgba(168,216,234,.6)" font-size="11" font-weight="600" letter-spacing="2.5">AUSSTELLERZONE</text>
+          <!-- Zone: Hauptbühne -->
+          <rect x="40" y="128" width="155" height="150" rx="10" fill="rgba(167,139,250,.07)" stroke="rgba(167,139,250,.18)" stroke-width="1"/>
+          <text x="117" y="206" text-anchor="middle" fill="rgba(167,139,250,.75)" font-size="10" font-weight="700">HAUPT-</text>
+          <text x="117" y="220" text-anchor="middle" fill="rgba(167,139,250,.75)" font-size="10" font-weight="700">BÜHNE</text>
+          <!-- Zone: Bühne 2 -->
+          <rect x="228" y="128" width="130" height="110" rx="10" fill="rgba(167,139,250,.05)" stroke="rgba(167,139,250,.14)" stroke-width="1"/>
+          <text x="293" y="188" text-anchor="middle" fill="rgba(167,139,250,.65)" font-size="10" font-weight="700">BÜHNE 2</text>
+          <!-- Zone: Kulturbühne -->
+          <rect x="390" y="128" width="120" height="100" rx="10" fill="rgba(167,139,250,.05)" stroke="rgba(167,139,250,.13)" stroke-width="1"/>
+          <text x="450" y="182" text-anchor="middle" fill="rgba(167,139,250,.65)" font-size="10" font-weight="700">KULTURBÜHNE</text>
+          <!-- Zone: Sportareal -->
+          <rect x="552" y="38" width="208" height="148" rx="10" fill="rgba(52,211,153,.05)" stroke="rgba(52,211,153,.14)" stroke-width="1"/>
+          <text x="656" y="117" text-anchor="middle" fill="rgba(52,211,153,.7)" font-size="10" font-weight="700">SPORTAREAL</text>
+          <!-- Zone: Festzelt -->
+          <rect x="228" y="258" width="280" height="152" rx="10" fill="rgba(245,200,66,.05)" stroke="rgba(245,200,66,.14)" stroke-width="1"/>
+          <text x="368" y="340" text-anchor="middle" fill="rgba(245,200,66,.7)" font-size="11" font-weight="700">FESTZELT</text>
+          <!-- Zone: Gastronomie -->
+          <rect x="40" y="218" width="155" height="202" rx="10" fill="rgba(251,146,60,.06)" stroke="rgba(251,146,60,.16)" stroke-width="1"/>
+          <text x="117" y="322" text-anchor="middle" fill="rgba(251,146,60,.75)" font-size="10" font-weight="700">GASTRO-</text>
+          <text x="117" y="336" text-anchor="middle" fill="rgba(251,146,60,.75)" font-size="10" font-weight="700">NOMIE</text>
+          <!-- Zone: Kinderzone -->
+          <rect x="552" y="218" width="208" height="202" rx="10" fill="rgba(245,200,66,.05)" stroke="rgba(245,200,66,.14)" stroke-width="1"/>
+          <text x="656" y="322" text-anchor="middle" fill="rgba(245,200,66,.7)" font-size="10" font-weight="700">KINDER-</text>
+          <text x="656" y="336" text-anchor="middle" fill="rgba(245,200,66,.7)" font-size="10" font-weight="700">ZONE</text>
+          <!-- Entrance -->
+          <path d="M390 460 L390 445 M382 452 L390 460 L398 452" stroke="rgba(255,255,255,.3)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <text x="400" y="475" text-anchor="middle" fill="rgba(255,255,255,.35)" font-size="9" font-weight="600" letter-spacing="1.5">EINGANG</text>
+
+          <!-- PINS -->
+          <!-- Hauptbühne -->
+          <g class="map-pin-group" data-cat="musik" style="cursor:pointer" onmouseenter="showTip(event,'Hauptbühne','Freitag–Sonntag, 17:00–24:00')" onmouseleave="hideTip()">
+            <circle cx="117" cy="158" r="18" fill="rgba(167,139,250,.08)" stroke="rgba(167,139,250,.2)" stroke-width="1"><animate attributeName="r" values="18;24;18" dur="3.5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;.2;.7" dur="3.5s" repeatCount="indefinite"/></circle>
+            <circle cx="117" cy="158" r="11" fill="rgba(167,139,250,.3)" stroke="rgba(167,139,250,.85)" stroke-width="1.5"/>
+            <text x="117" y="162" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">M</text>
+          </g>
+          <!-- Bühne 2 -->
+          <g class="map-pin-group" data-cat="musik" style="cursor:pointer" onmouseenter="showTip(event,'Bühne 2','Samstag–Sonntag, 14:00–22:00')" onmouseleave="hideTip()">
+            <circle cx="293" cy="155" r="15" fill="rgba(167,139,250,.08)" stroke="rgba(167,139,250,.2)" stroke-width="1"><animate attributeName="r" values="15;20;15" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;.15;.6" dur="4s" repeatCount="indefinite"/></circle>
+            <circle cx="293" cy="155" r="9" fill="rgba(167,139,250,.28)" stroke="rgba(167,139,250,.8)" stroke-width="1.5"/>
+            <text x="293" y="159" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">M</text>
+          </g>
+          <!-- Kulturbühne -->
+          <g class="map-pin-group" data-cat="musik" style="cursor:pointer" onmouseenter="showTip(event,'Kulturbühne','Samstag–Sonntag, 10:00–18:00')" onmouseleave="hideTip()">
+            <circle cx="450" cy="150" r="14" fill="rgba(167,139,250,.08)" stroke="rgba(167,139,250,.18)" stroke-width="1"><animate attributeName="r" values="14;19;14" dur="4.5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".55;.12;.55" dur="4.5s" repeatCount="indefinite"/></circle>
+            <circle cx="450" cy="150" r="9" fill="rgba(167,139,250,.25)" stroke="rgba(167,139,250,.75)" stroke-width="1.5"/>
+            <text x="450" y="154" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">K</text>
+          </g>
+          <!-- Sportareal -->
+          <g class="map-pin-group" data-cat="sport" style="cursor:pointer" onmouseenter="showTip(event,'Sportareal','Samstag, 10:00–18:00')" onmouseleave="hideTip()">
+            <circle cx="656" cy="100" r="16" fill="rgba(52,211,153,.08)" stroke="rgba(52,211,153,.22)" stroke-width="1"><animate attributeName="r" values="16;22;16" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".65;.18;.65" dur="3s" repeatCount="indefinite"/></circle>
+            <circle cx="656" cy="100" r="10" fill="rgba(52,211,153,.28)" stroke="rgba(52,211,153,.85)" stroke-width="1.5"/>
+            <text x="656" y="104" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">S</text>
+          </g>
+          <!-- Festzelt -->
+          <g class="map-pin-group" data-cat="gastro" style="cursor:pointer" onmouseenter="showTip(event,'Festzelt','Täglich geöffnet')" onmouseleave="hideTip()">
+            <circle cx="368" cy="295" r="17" fill="rgba(245,200,66,.08)" stroke="rgba(245,200,66,.2)" stroke-width="1"><animate attributeName="r" values="17;23;17" dur="3.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".65;.18;.65" dur="3.8s" repeatCount="indefinite"/></circle>
+            <circle cx="368" cy="295" r="10" fill="rgba(245,200,66,.28)" stroke="rgba(245,200,66,.85)" stroke-width="1.5"/>
+            <text x="368" y="299" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">F</text>
+          </g>
+          <!-- Gastronomie -->
+          <g class="map-pin-group" data-cat="gastro" style="cursor:pointer" onmouseenter="showTip(event,'Gastronomie','Täglich 11:00–23:00')" onmouseleave="hideTip()">
+            <circle cx="117" cy="295" r="15" fill="rgba(251,146,60,.08)" stroke="rgba(251,146,60,.22)" stroke-width="1"><animate attributeName="r" values="15;20;15" dur="4.2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;.15;.6" dur="4.2s" repeatCount="indefinite"/></circle>
+            <circle cx="117" cy="295" r="9" fill="rgba(251,146,60,.28)" stroke="rgba(251,146,60,.85)" stroke-width="1.5"/>
+            <text x="117" y="299" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">G</text>
+          </g>
+          <!-- Kinderzone -->
+          <g class="map-pin-group" data-cat="kinder" style="cursor:pointer" onmouseenter="showTip(event,'Kinderzone','Sa–So 10:00–18:00')" onmouseleave="hideTip()">
+            <circle cx="656" cy="295" r="16" fill="rgba(245,200,66,.08)" stroke="rgba(245,200,66,.22)" stroke-width="1"><animate attributeName="r" values="16;22;16" dur="3.3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".62;.16;.62" dur="3.3s" repeatCount="indefinite"/></circle>
+            <circle cx="656" cy="295" r="10" fill="rgba(245,200,66,.25)" stroke="rgba(245,200,66,.82)" stroke-width="1.5"/>
+            <text x="656" y="299" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">K</text>
+          </g>
+          <!-- Ausstellerzone -->
+          <g class="map-pin-group" data-cat="info" style="cursor:pointer" onmouseenter="showTip(event,'Ausstellerzone','50+ Aussteller, täglich 10:00–20:00')" onmouseleave="hideTip()">
+            <circle cx="400" cy="58" r="14" fill="rgba(168,216,234,.08)" stroke="rgba(168,216,234,.22)" stroke-width="1"><animate attributeName="r" values="14;19;14" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;.15;.6" dur="4s" repeatCount="indefinite"/></circle>
+            <circle cx="400" cy="58" r="9" fill="rgba(168,216,234,.25)" stroke="rgba(168,216,234,.82)" stroke-width="1.5"/>
+            <text x="400" y="62" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">A</text>
+          </g>
+          <!-- Info -->
+          <g class="map-pin-group" data-cat="info" style="cursor:pointer" onmouseenter="showTip(event,'Information &amp; Sanitär','Täglich geöffnet')" onmouseleave="hideTip()">
+            <circle cx="530" cy="380" r="13" fill="rgba(168,216,234,.06)" stroke="rgba(168,216,234,.18)" stroke-width="1"><animate attributeName="r" values="13;18;13" dur="4.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;.12;.5" dur="4.8s" repeatCount="indefinite"/></circle>
+            <circle cx="530" cy="380" r="8" fill="rgba(168,216,234,.22)" stroke="rgba(168,216,234,.75)" stroke-width="1.5"/>
+            <text x="530" y="384" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">I</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMM -->
+<section id="programm">
+  <div class="container">
+    <div class="sec-hd reveal">
+      <span class="pill pill-gl">Zeitplan</span>
+      <div class="divider"></div>
+      <h2 class="sec-title tg">Festprogramm</h2>
+      <p class="sec-sub">Drei Tage voller Highlights — entdecke das vollständige Programm für jeden Festtag.</p>
+    </div>
+    <div class="reveal" data-tabs="prog">
+      <div class="tabs-bar">
+        <button class="tab-btn act" data-tab-btn="fr" onclick="switchTab('prog','fr')">Fr 18.9.</button>
+        <button class="tab-btn" data-tab-btn="sa" onclick="switchTab('prog','sa')">Sa 19.9.</button>
+        <button class="tab-btn" data-tab-btn="so" onclick="switchTab('prog','so')">So 20.9.</button>
+      </div>
+      <!-- Freitag -->
+      <div class="tab-panel act" data-tab-panel="fr">
+        <div class="prog-list">
+          <div class="prog-item"><div class="prog-time">17:00</div><div><div class="prog-title">Offizieller Festauftakt</div><div class="prog-loc">Hauptbühne</div></div><span class="pill pill-r">Gala</span></div>
+          <div class="prog-item"><div class="prog-time">18:30</div><div><div class="prog-title">Stadtlauf Wohlen 5 km &amp; 10 km</div><div class="prog-loc">Festgelände</div></div><span class="pill pill-gr">Sport</span></div>
+          <div class="prog-item"><div class="prog-time">20:00</div><div><div class="prog-title">Konzert Stadtkapelle Wohlen</div><div class="prog-loc">Hauptbühne</div></div><span class="pill pill-p">Musik</span></div>
+          <div class="prog-item"><div class="prog-time">21:00</div><div><div class="prog-title">Jazz Night — The Freiberger Quartet</div><div class="prog-loc">Bühne 2</div></div><span class="pill pill-p">Musik</span></div>
+          <div class="prog-item"><div class="prog-time">22:30</div><div><div class="prog-title">Late Night DJ-Set</div><div class="prog-loc">Festzelt</div></div><span class="pill pill-p">Musik</span></div>
+        </div>
+      </div>
+      <!-- Samstag -->
+      <div class="tab-panel" data-tab-panel="sa">
+        <div class="prog-list">
+          <div class="prog-item"><div class="prog-time">10:00</div><div><div class="prog-title">Familienfrühstück</div><div class="prog-loc">Festplatz</div></div><span class="pill pill-o">Kulinarik</span></div>
+          <div class="prog-item"><div class="prog-time">11:00</div><div><div class="prog-title">Kinderparadies öffnet</div><div class="prog-loc">Kinderzone</div></div><span class="pill pill-g">Kinder</span></div>
+          <div class="prog-item"><div class="prog-time">12:00</div><div><div class="prog-title">Produzenten-Markt Freiamt</div><div class="prog-loc">Ausstellerzone</div></div><span class="pill pill-o">Kulinarik</span></div>
+          <div class="prog-item"><div class="prog-time">14:00</div><div><div class="prog-title">Beachvolleyball-Turnier</div><div class="prog-loc">Sportareal</div></div><span class="pill pill-gr">Sport</span></div>
+          <div class="prog-item"><div class="prog-time">15:30</div><div><div class="prog-title">Theateraufführung «Das Freiamt»</div><div class="prog-loc">Kulturbühne</div></div><span class="pill pill-b">Kultur</span></div>
+          <div class="prog-item"><div class="prog-time">17:00</div><div><div class="prog-title">Konzert Regionalband</div><div class="prog-loc">Hauptbühne</div></div><span class="pill pill-p">Musik</span></div>
+          <div class="prog-item"><div class="prog-time">19:30</div><div><div class="prog-title">Galadiner (Ticketpflichtig)</div><div class="prog-loc">Festzelt</div></div><span class="pill pill-r">Gala</span></div>
+          <div class="prog-item"><div class="prog-time">21:00</div><div><div class="prog-title">Grosses Abendkonzert</div><div class="prog-loc">Hauptbühne</div></div><span class="pill pill-p">Musik</span></div>
+        </div>
+      </div>
+      <!-- Sonntag -->
+      <div class="tab-panel" data-tab-panel="so">
+        <div class="prog-list">
+          <div class="prog-item"><div class="prog-time">10:00</div><div><div class="prog-title">Ökumenischer Gottesdienst</div><div class="prog-loc">Festgelände</div></div><span class="pill pill-b">Kultur</span></div>
+          <div class="prog-item"><div class="prog-time">11:30</div><div><div class="prog-title">Brunch &amp; Produzenten-Markt</div><div class="prog-loc">Ausstellerzone</div></div><span class="pill pill-o">Kulinarik</span></div>
+          <div class="prog-item"><div class="prog-time">13:00</div><div><div class="prog-title">Kindershow &amp; Märchen</div><div class="prog-loc">Kulturbühne</div></div><span class="pill pill-g">Kinder</span></div>
+          <div class="prog-item"><div class="prog-time">14:30</div><div><div class="prog-title">Sportvorführungen &amp; Finals</div><div class="prog-loc">Sportareal</div></div><span class="pill pill-gr">Sport</span></div>
+          <div class="prog-item"><div class="prog-time">16:00</div><div><div class="prog-title">Festkonzert Abschluss</div><div class="prog-loc">Hauptbühne</div></div><span class="pill pill-p">Musik</span></div>
+          <div class="prog-item"><div class="prog-time">17:30</div><div><div class="prog-title">Festansprache &amp; Ehrungen</div><div class="prog-loc">Hauptbühne</div></div><span class="pill pill-r">Gala</span></div>
+          <div class="prog-item"><div class="prog-time">18:30</div><div><div class="prog-title">Abschlussfeuerwerk</div><div class="prog-loc">Festgelände</div></div><span class="pill pill-r">Gala</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AKTIVITÄTEN -->
+<section id="aktivitaeten">
+  <div class="container">
+    <div class="sec-hd reveal">
+      <span class="pill pill-gl">Mitmachen</span>
+      <div class="divider"></div>
+      <h2 class="sec-title tg">Aktivitäten</h2>
+      <p class="sec-sub">Von Konzerten über Sport bis zu Kulinarik und Kinderangeboten — hier ist für alle etwas dabei.</p>
+    </div>
+    <div class="filter-bar reveal">
+      <button class="fp act" data-filter="alle" onclick="filterActs('alle')">Alle</button>
+      <button class="fp" data-filter="musik" onclick="filterActs('musik')">🎵 Musik</button>
+      <button class="fp" data-filter="sport" onclick="filterActs('sport')">⚡ Sport</button>
+      <button class="fp" data-filter="kulinarik" onclick="filterActs('kulinarik')">🍷 Kulinarik</button>
+      <button class="fp" data-filter="kinder" onclick="filterActs('kinder')">🎠 Kinder</button>
+      <button class="fp" data-filter="kultur" onclick="filterActs('kultur')">🎭 Kultur</button>
+      <button class="fp" data-filter="gala" onclick="filterActs('gala')">✨ Gala</button>
+    </div>
+    <div class="act-g">
+      <div class="card act-c reveal" data-category="musik" data-time="Fr, 20:00 Uhr" data-location="Hauptbühne" data-desc="Die Stadtkapelle Wohlen eröffnet den Musikabend mit einem mitreissenden Programm aus Blasmusik, volkstümlichen Weisen und modernen Arrangements. Ein Pflichttermin für alle Musikbegeisterten." onclick="openAct(this)">
+        <span class="act-em">🎺</span><h3>Konzert Stadtkapelle Wohlen</h3>
+        <p>Blasmusik, Folk und moderne Arrangements von der lokalen Stadtkapelle.</p>
+        <div class="act-meta"><span>🕐 Fr, 20:00 Uhr</span><span>📍 Hauptbühne</span></div>
+        <div style="margin-top:12px"><span class="pill pill-p">Musik &amp; Bühne</span></div>
+      </div>
+      <div class="card act-c reveal d1" data-category="musik" data-time="Sa, 21:00 Uhr" data-location="Bühne 2" data-desc="The Freiberger Quartet bringt eleganten Jazz in die Festnacht. Vier Ausnahmemusiker aus der Region präsentieren Eigenkompositionen und Jazzklassiker in einer unvergesslichen Atmosphäre." onclick="openAct(this)">
+        <span class="act-em">🎷</span><h3>Jazz Night — Freiberger Quartet</h3>
+        <p>Eleganter Jazz mit vier regionalen Ausnahmemusikern unter freiem Himmel.</p>
+        <div class="act-meta"><span>🕐 Sa, 21:00 Uhr</span><span>📍 Bühne 2</span></div>
+        <div style="margin-top:12px"><span class="pill pill-p">Musik &amp; Bühne</span></div>
+      </div>
+      <div class="card act-c reveal d2" data-category="sport" data-time="Fr, 18:30 Uhr" data-location="Festgelände" data-desc="Der traditionelle Stadtlauf über 5 km und 10 km führt durch das Festgelände und die Wohler Innenstadt. Anmeldung vor Ort ab 17:00 Uhr möglich. Startnummern am Infozelt." onclick="openAct(this)">
+        <span class="act-em">🏃</span><h3>Stadtlauf Wohlen</h3>
+        <p>5 km und 10 km durch das Festgelände und die Wohler Innenstadt.</p>
+        <div class="act-meta"><span>🕐 Fr, 18:30 Uhr</span><span>📍 Festgelände</span></div>
+        <div style="margin-top:12px"><span class="pill pill-gr">Sport &amp; Bewegung</span></div>
+      </div>
+      <div class="card act-c reveal" data-category="sport" data-time="Sa, 10:00–18:00 Uhr" data-location="Sportareal" data-desc="Beachvolleyball-Turnier für Amateure und Hobbymannschaften. Teams à 4 Personen, Anmeldung vor Ort. Preise für die besten drei Teams, gesponsert vom Sportverein Wohlen." onclick="openAct(this)">
+        <span class="act-em">🏐</span><h3>Beachvolleyball-Turnier</h3>
+        <p>Teams-Turnier für Amateure und Hobbymannschaften mit Preisen.</p>
+        <div class="act-meta"><span>🕐 Sa, 10:00–18:00</span><span>📍 Sportareal</span></div>
+        <div style="margin-top:12px"><span class="pill pill-gr">Sport &amp; Bewegung</span></div>
+      </div>
+      <div class="card act-c reveal d1" data-category="kulinarik" data-time="Sa, 17:00 Uhr" data-location="Weinstube im Festzelt" data-desc="Erlebe die besten Aargauer Weine in einer geführten Weinprobe. Lokale Winzer präsentieren ihre aktuellen Jahrgänge, teilen ihr Wissen und schenken regionale Spezialitäten aus." onclick="openAct(this)">
+        <span class="act-em">🍷</span><h3>Aargauer Weinprobe</h3>
+        <p>Geführte Degustation mit lokalen Winzern und ihren besten Jahrgängen.</p>
+        <div class="act-meta"><span>🕐 Sa, 17:00 Uhr</span><span>📍 Weinstube im Festzelt</span></div>
+        <div style="margin-top:12px"><span class="pill pill-o">Kulinarik &amp; Genuss</span></div>
+      </div>
+      <div class="card act-c reveal d2" data-category="kulinarik" data-time="Sa–So, 10:00–20:00 Uhr" data-location="Ausstellerzone" data-desc="Über 30 lokale Produzenten präsentieren ihre Spezialitäten: Käse, Honig, Konfitüre, Frischgemüse, Backwaren und vieles mehr. Direktverkauf vom Erzeuger — frischer geht's nicht." onclick="openAct(this)">
+        <span class="act-em">🧺</span><h3>Produzenten-Markt Freiamt</h3>
+        <p>30+ lokale Produzenten mit Käse, Honig, Gemüse, Backwaren und mehr.</p>
+        <div class="act-meta"><span>🕐 Sa–So, 10:00–20:00</span><span>📍 Ausstellerzone</span></div>
+        <div style="margin-top:12px"><span class="pill pill-o">Kulinarik &amp; Genuss</span></div>
+      </div>
+      <div class="card act-c reveal" data-category="kinder" data-time="Sa–So, 10:00–18:00 Uhr" data-location="Kinderzone" data-desc="Ein ganzes Paradies für die Kleinen: Hüpfburg, Ponyreiten, Schminkstand, Bastelecke, Klettergerüst und Wasserspiele. Eltern können sich entspannen, die Kinder erleben unvergessliche Stunden." onclick="openAct(this)">
+        <span class="act-em">🎠</span><h3>Kinderparadies</h3>
+        <p>Hüpfburg, Ponyreiten, Schminkstand und Wasserspiele für die Kleinen.</p>
+        <div class="act-meta"><span>🕐 Sa–So, 10:00–18:00</span><span>📍 Kinderzone</span></div>
+        <div style="margin-top:12px"><span class="pill pill-g">Kinder &amp; Familie</span></div>
+      </div>
+      <div class="card act-c reveal d1" data-category="kinder" data-time="So, 13:00 Uhr" data-location="Kulturbühne" data-desc="Kinder basteln eigene Souvenirs zum Stadtfest-Jubiläum. Material und Betreuung sind vorhanden. Kostenlos für alle Kinder von 5 bis 12 Jahren. Keine Voranmeldung notwendig." onclick="openAct(this)">
+        <span class="act-em">✂️</span><h3>Kreativwerkstatt für Kinder</h3>
+        <p>Basteln und Gestalten rund ums Stadtfest-Jubiläum. Kostenlos für alle.</p>
+        <div class="act-meta"><span>🕐 So, 13:00 Uhr</span><span>📍 Kulturbühne</span></div>
+        <div style="margin-top:12px"><span class="pill pill-g">Kinder &amp; Familie</span></div>
+      </div>
+      <div class="card act-c reveal d2" data-category="kultur" data-time="Fr–So ganztags" data-location="Festzelt" data-desc="Eine beeindruckende Ausstellung über 150 Jahre Wohlen: historische Fotografien, Dokumente und Objekte zeigen die Entwicklung der Stadt von der Gemeindegründung 1877 bis heute." onclick="openAct(this)">
+        <span class="act-em">🖼</span><h3>Fotoausstellung 150 Jahre Wohlen</h3>
+        <p>Historische Bilder und Dokumente zur Entwicklung der Stadt seit 1877.</p>
+        <div class="act-meta"><span>🕐 Fr–So ganztags</span><span>📍 Festzelt</span></div>
+        <div style="margin-top:12px"><span class="pill pill-b">Kultur</span></div>
+      </div>
+      <div class="card act-c reveal" data-category="kultur" data-time="Sa, 15:30 Uhr" data-location="Kulturbühne" data-desc="Das Freiamt-Theater zeigt seine neue Eigenproduktion «Das Freiamt» — eine humorvolle Zeitreise durch 150 Jahre Wohler Geschichte. Familiäres Volkstheater auf höchstem Niveau." onclick="openAct(this)">
+        <span class="act-em">🎭</span><h3>Theateraufführung «Das Freiamt»</h3>
+        <p>Humorvolle Zeitreise durch 150 Jahre Wohler Geschichte vom Freiamt-Theater.</p>
+        <div class="act-meta"><span>🕐 Sa, 15:30 Uhr</span><span>📍 Kulturbühne</span></div>
+        <div style="margin-top:12px"><span class="pill pill-b">Kultur</span></div>
+      </div>
+      <div class="card act-c reveal d1" data-category="gala" data-time="Sa, 19:30 Uhr" data-location="Festzelt" data-desc="Das festliche Galadiner vereint exzellente Küche und hochkarätige Unterhaltung in eleganter Atmosphäre. Tickets sind limitiert und müssen im Voraus gebucht werden." onclick="openAct(this)">
+        <span class="act-em">🥂</span><h3>Galadiner</h3>
+        <p>Festliches Dinner mit exklusivem Menu und Unterhaltung. Tickets limitiert.</p>
+        <div class="act-meta"><span>🕐 Sa, 19:30 Uhr</span><span>📍 Festzelt</span></div>
+        <div style="margin-top:12px"><span class="pill pill-r">Gala &amp; Feier</span></div>
+      </div>
+      <div class="card act-c reveal d2" data-category="gala" data-time="So, 18:30 Uhr" data-location="Festgelände" data-desc="Der leuchtende Abschluss des Stadtfestes: Ein spektakuläres Feuerwerk erhellt den Wohler Abendhimmel und beendet drei unvergessliche Festtage. Beste Sicht vom Festgelände aus." onclick="openAct(this)">
+        <span class="act-em">🎆</span><h3>Abschlussfeuerwerk</h3>
+        <p>Spektakuläres Feuerwerk als leuchtender Abschluss der drei Festtage.</p>
+        <div class="act-meta"><span>🕐 So, 18:30 Uhr</span><span>📍 Festgelände</span></div>
+        <div style="margin-top:12px"><span class="pill pill-r">Gala &amp; Feier</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANMELDUNG -->
+<section id="anmeldung">
+  <div class="container">
+    <div class="sec-hd reveal">
+      <span class="pill pill-gl">Dabei sein</span>
+      <div class="divider"></div>
+      <h2 class="sec-title tg">Anmeldung</h2>
+      <p class="sec-sub">Sichere dir deinen Platz am Stadtfest Wohlen 2027 und bleibe über alle Neuigkeiten informiert.</p>
+    </div>
+    <div class="card form-wrap reveal" style="max-width:740px">
+      <div id="reg-form-wrap">
+        <form id="reg-form" onsubmit="submitForm(event,'reg-form-wrap','reg-ok')">
+          <div class="form-g">
+            <div class="fg"><label class="fl">Vorname *</label><input class="fi" type="text" placeholder="Hans" required></div>
+            <div class="fg"><label class="fl">Nachname *</label><input class="fi" type="text" placeholder="Meier" required></div>
+            <div class="fg"><label class="fl">E-Mail *</label><input class="fi" type="email" placeholder="hans.meier@beispiel.ch" required></div>
+            <div class="fg"><label class="fl">Telefon</label><input class="fi" type="tel" placeholder="+41 56 000 00 00"></div>
+            <div class="fg"><label class="fl">Anzahl Personen</label>
+              <div class="stepper">
+                <button type="button" class="stb" onclick="stepChange(this,-1)">−</button>
+                <span class="stv">1</span>
+                <input type="hidden" name="personen" value="1" class="stv-hidden">
+                <button type="button" class="stb" onclick="stepChange(this,1)">+</button>
+              </div>
+            </div>
+            <div class="fg"><label class="fl">Altersgruppe</label>
+              <select class="fs">
+                <option>Erwachsene</option>
+                <option>Familien mit Kindern</option>
+                <option>Senioren</option>
+                <option>Jugendliche</option>
+              </select>
+            </div>
+            <div class="fg full"><label class="fl">Interessen</label>
+              <div class="cbs">
+                <label class="cb"><input type="checkbox"> Musik &amp; Bühne</label>
+                <label class="cb"><input type="checkbox"> Sport &amp; Bewegung</label>
+                <label class="cb"><input type="checkbox"> Kulinarik &amp; Genuss</label>
+                <label class="cb"><input type="checkbox"> Kinder &amp; Familie</label>
+                <label class="cb"><input type="checkbox"> Kultur</label>
+                <label class="cb"><input type="checkbox"> Gala &amp; Feier</label>
+              </div>
+            </div>
+            <div class="fg full"><label class="fl">Bemerkungen</label><textarea class="ft" placeholder="Besondere Wünsche oder Fragen..."></textarea></div>
+            <div class="fg full"><button type="submit" class="btn btn-red" style="width:100%;justify-content:center">Anmeldung absenden</button></div>
+          </div>
+        </form>
+      </div>
+      <div class="form-ok" id="reg-ok">
+        <div class="ok-ic">✓</div>
+        <div class="ok-t">Anmeldung erfolgreich!</div>
+        <p class="ok-p">Vielen Dank für deine Anmeldung zum Stadtfest Wohlen 2027.<br>Du erhältst in Kürze eine Bestätigung per E-Mail.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt">
+  <div class="container">
+    <div class="sec-hd reveal">
+      <span class="pill pill-gl">Kontakt</span>
+      <div class="divider"></div>
+      <h2 class="sec-title tg">Schreib uns</h2>
+      <p class="sec-sub">Fragen, Anregungen oder Partnerschaftsanfragen — wir freuen uns auf deine Nachricht.</p>
+    </div>
+    <div class="cont-g reveal">
+      <div class="card cont-info">
+        <div class="ci-item"><div class="ci-ic">📧</div><div><div class="ci-lbl">E-Mail</div><div class="ci-val">info@stadtfest-wohlen.ch</div></div></div>
+        <div class="ci-item"><div class="ci-ic">📞</div><div><div class="ci-lbl">Telefon</div><div class="ci-val">+41 56 000 00 00</div></div></div>
+        <div class="ci-item"><div class="ci-ic">📍</div><div><div class="ci-lbl">Festbüro</div><div class="ci-val">Gemeindehaus, 5610 Wohlen AG</div></div></div>
+        <div class="ci-item"><div class="ci-ic">🕐</div><div><div class="ci-lbl">Öffnungszeiten</div><div class="ci-val">Di–Fr, 09:00–12:00 Uhr</div></div></div>
+      </div>
+      <div class="card cont-form">
+        <div id="cont-form-wrap">
+          <form id="cont-form" onsubmit="submitForm(event,'cont-form-wrap','cont-ok')">
+            <div class="form-g">
+              <div class="fg"><label class="fl">Name *</label><input class="fi" type="text" placeholder="Hans Meier" required></div>
+              <div class="fg"><label class="fl">E-Mail *</label><input class="fi" type="email" placeholder="hans@beispiel.ch" required></div>
+              <div class="fg full"><label class="fl">Betreff</label>
+                <select class="fs">
+                  <option>Allgemeine Anfrage</option>
+                  <option>Sponsoring &amp; Partnership</option>
+                  <option>Medienanfrage</option>
+                  <option>Aussteller &amp; Stand</option>
+                  <option>Programm &amp; Aktivitäten</option>
+                </select>
+              </div>
+              <div class="fg full"><label class="fl">Nachricht *</label><textarea class="ft" placeholder="Deine Nachricht..." required></textarea></div>
+              <div class="fg full"><button type="submit" class="btn btn-red" style="width:100%;justify-content:center">Nachricht senden</button></div>
+            </div>
+          </form>
+        </div>
+        <div class="form-ok" id="cont-ok">
+          <div class="ok-ic">✓</div>
+          <div class="ok-t">Nachricht gesendet!</div>
+          <p class="ok-p">Vielen Dank für deine Nachricht. Wir melden uns innerhalb von 2 Werktagen bei dir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÜBER UNS -->
+<section id="ueber-uns">
+  <div class="container">
+    <div class="sec-hd reveal">
+      <span class="pill pill-gl">Wer wir sind</span>
+      <div class="divider"></div>
+      <h2 class="sec-title tg">Über uns</h2>
+    </div>
+    <div class="about-g reveal">
+      <div class="about-t">
+        <p>Das Stadtfest Wohlen 2027 wird organisiert vom OK-Komitee Stadtfest Wohlen AG — einem ehrenamtlichen Komitee aus Vereinen, Unternehmen, Schulen und der Gemeindeverwaltung.</p>
+        <p>Seit der Gründung als eigenständige Gemeinde im Jahr 1877 hat sich Wohlen zu einem lebendigen Zentrum des Aargauer Freiamts entwickelt. Mit über 16 000 Einwohnerinnen und Einwohnern ist Wohlen heute die grösste Gemeinde des Bezirks.</p>
+        <p>Das Jubiläumsfest soll alle Wohlerinnen und Wohler sowie Gäste aus der ganzen Region zusammenbringen — mit einem Programm, das Geschichte, Gegenwart und Zukunft feiert.</p>
+        <div class="about-stats">
+          <div class="card as-c"><span class="as-n" style="color:var(--red)">1877</span><div class="as-l">Gemeindegründung</div></div>
+          <div class="card as-c"><span class="as-n" style="color:var(--ice)">150</span><div class="as-l">Jahre Geschichte</div></div>
+          <div class="card as-c"><span class="as-n" style="color:var(--gold)">16 000+</span><div class="as-l">Einwohner</div></div>
+        </div>
+      </div>
+      <div class="card" style="padding:36px;border-radius:var(--r3)">
+        <h3 style="font-family:var(--fd);font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:18px">OK-Komitee</h3>
+        <p style="color:rgba(255,255,255,.5);font-size:.9rem;line-height:1.75">Das Organisationskomitee besteht aus engagierten Freiwilligen aus allen Bereichen des Wohler Gemeinschaftslebens. Über 80 Helferinnen und Helfer arbeiten seit zwei Jahren an der Realisierung dieses einmaligen Festes.</p>
+        <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:9px">
+          <span class="pill pill-b">Vereine</span>
+          <span class="pill pill-p">Unternehmen</span>
+          <span class="pill pill-g">Schulen</span>
+          <span class="pill pill-gr">Gemeinde</span>
+        </div>
+      </div>
+    </div>
+    <h3 class="reveal" style="font-family:var(--fd);font-size:1.4rem;font-weight:700;color:#fff;margin-bottom:24px">Das Team</h3>
+    <div class="team-g">
+      <div class="card team-c reveal">
+        <div class="team-av" style="background:linear-gradient(135deg,#cc1a2e,#8b0a1a)"><span style="position:relative;z-index:2">HM</span><div style="position:absolute;inset:-3px;border-radius:50%;background:conic-gradient(var(--red),var(--ice),var(--red));z-index:0;animation:spin 9s linear infinite"></div></div>
+        <div class="team-n">Hans Meier</div><div class="team-r">Präsident OK-Komitee</div>
+      </div>
+      <div class="card team-c reveal d1">
+        <div class="team-av" style="background:linear-gradient(135deg,#3b82f6,#7c3aed)"><span style="position:relative;z-index:2">MK</span><div style="position:absolute;inset:-3px;border-radius:50%;background:conic-gradient(#3b82f6,#a78bfa,#3b82f6);z-index:0;animation:spin 9s linear infinite"></div></div>
+        <div class="team-n">Maria Kunz</div><div class="team-r">Vizepräsidentin &amp; Programm</div>
+      </div>
+      <div class="card team-c reveal d2">
+        <div class="team-av" style="background:linear-gradient(135deg,#059669,#0891b2)"><span style="position:relative;z-index:2">PS</span><div style="position:absolute;inset:-3px;border-radius:50%;background:conic-gradient(#34d399,#22d3ee,#34d399);z-index:0;animation:spin 9s linear infinite"></div></div>
+        <div class="team-n">Peter Schmid</div><div class="team-r">Finanzen &amp; Budget</div>
+      </div>
+      <div class="card team-c reveal">
+        <div class="team-av" style="background:linear-gradient(135deg,#db2777,#cc1a2e)"><span style="position:relative;z-index:2">SL</span><div style="position:absolute;inset:-3px;border-radius:50%;background:conic-gradient(#f472b6,var(--red),#f472b6);z-index:0;animation:spin 9s linear infinite"></div></div>
+        <div class="team-n">Sandra Lüthi</div><div class="team-r">Marketing &amp; Kommunikation</div>
+      </div>
+      <div class="card team-c reveal d1">
+        <div class="team-av" style="background:linear-gradient(135deg,#d97706,#dc2626)"><span style="position:relative;z-index:2">TB</span><div style="position:absolute;inset:-3px;border-radius:50%;background:conic-gradient(var(--gold),#fb923c,var(--gold));z-index:0;animation:spin 9s linear infinite"></div></div>
+        <div class="team-n">Thomas Bürgi</div><div class="team-r">Infrastruktur &amp; Sicherheit</div>
+      </div>
+      <div class="card team-c reveal d2">
+        <div class="team-av" style="background:linear-gradient(135deg,#7c3aed,#2563eb)"><span style="position:relative;z-index:2">JV</span><div style="position:absolute;inset:-3px;border-radius:50%;background:conic-gradient(#a78bfa,var(--ice),#a78bfa);z-index:0;animation:spin 9s linear infinite"></div></div>
+        <div class="team-n">Julia Vogel</div><div class="team-r">Kinder &amp; Familie</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="nav-logo" style="margin-bottom:0">
+          <div class="nav-badge">SW</div>
+          <div class="nav-lt">Stadtfest Wohlen<span class="nav-ls">18.–20. September 2027</span></div>
+        </div>
+        <p>Ein Fest für alle Wohlerinnen und Wohler. 150 Jahre Geschichte — drei Tage gemeinsam feiern.</p>
+        <div class="soc" style="margin-top:14px">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">&#9651;</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#programm">Programm</a></li>
+          <li><a href="#aktivitaeten">Aktivitäten</a></li>
+          <li><a href="#anmeldung">Anmeldung</a></li>
+          <li><a href="#ueber-uns">Über uns</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:info@stadtfest-wohlen.ch">info@stadtfest-wohlen.ch</a></li>
+          <li><a href="tel:+41560000000">+41 56 000 00 00</a></li>
+          <li><a href="#">Gemeindehaus Wohlen</a></li>
+          <li><a href="#">5610 Wohlen AG</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Hauptsponsoren</h4>
+        <div class="sponsors">
+          <span class="sp-b">Raiffeisen Schweiz</span>
+          <span class="sp-b">Gemeinde Wohlen</span>
+          <span class="sp-b">Kanton Aargau</span>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <div class="foot-cr">© 2027 Stadtfest Wohlen AG · Alle Rechte vorbehalten</div>
+      <div class="foot-leg">
+        <button onclick="openModal('modal-ds')">Datenschutz</button>
+        <button onclick="openModal('modal-imp')">Impressum</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div id="cookie">
+  <div class="cook-t">Wir verwenden Cookies, um das Besuchserlebnis zu verbessern. Technisch notwendige Cookies sind immer aktiv. Mehr Infos in unserer <button onclick="openModal('modal-ds')" style="background:none;border:none;color:var(--ice);cursor:pointer;font-family:var(--fb);font-size:.86rem;padding:0">Datenschutzerklärung</button>.</div>
+  <div class="cook-btns">
+    <button class="btn btn-red btn-sm" onclick="acceptCookies('all')">Alle akzeptieren</button>
+    <button class="btn btn-gl btn-sm" onclick="acceptCookies('necessary')">Nur notwendige</button>
+  </div>
+</div>
+
+<!-- MODAL: ACTIVITY DETAIL -->
+<div class="modal-ov" id="modal-act">
+  <div class="modal-box">
+    <div class="modal-hd">
+      <div class="modal-title" id="act-modal-title">Aktivität</div>
+      <button class="modal-x" onclick="closeModal('modal-act')">✕</button>
+    </div>
+    <div class="modal-bd">
+      <div style="font-size:3rem;margin-bottom:16px" id="act-modal-em"></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px" id="act-modal-meta"></div>
+      <p id="act-modal-desc"></p>
+      <div style="margin-top:22px"><a href="#anmeldung" class="btn btn-red btn-sm" onclick="closeModal('modal-act')">Jetzt anmelden</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: DATENSCHUTZ -->
+<div class="modal-ov" id="modal-ds">
+  <div class="modal-box wide">
+    <div class="modal-hd">
+      <div class="modal-title">Datenschutzerklärung</div>
+      <button class="modal-x" onclick="closeModal('modal-ds')">✕</button>
+    </div>
+    <div class="modal-bd">
+      <h3>1. Verantwortliche Stelle</h3>
+      <p>OK-Komitee Stadtfest Wohlen AG, Gemeindehaus, 5610 Wohlen AG, Schweiz. E-Mail: info@stadtfest-wohlen.ch</p>
+      <h3>2. Erhobene Daten</h3>
+      <p>Bei der Anmeldung erheben wir: Vorname, Nachname, E-Mail-Adresse, Telefonnummer (freiwillig), Anzahl Personen sowie Interessen. Diese Daten werden ausschliesslich für die Bearbeitung Ihrer Anmeldung und die Kommunikation rund um das Stadtfest verwendet.</p>
+      <h3>3. Zweck der Datenverarbeitung</h3>
+      <p>Wir verarbeiten Ihre Daten zur Verwaltung von Anmeldungen, zur Kommunikation über das Veranstaltungsprogramm und zur Beantwortung von Anfragen. Es erfolgt keine Weitergabe an Dritte ohne Ihre ausdrückliche Zustimmung.</p>
+      <h3>4. Cookies</h3>
+      <p>Diese Website verwendet technisch notwendige Cookies zur Speicherung Ihrer Cookie-Einstellungen (localStorage). Analytische Cookies werden nur mit Ihrer ausdrücklichen Zustimmung gesetzt.</p>
+      <h3>5. Ihre Rechte</h3>
+      <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Bitte wenden Sie sich an: info@stadtfest-wohlen.ch</p>
+      <h3>6. Datensicherheit</h3>
+      <p>Wir setzen technische und organisatorische Massnahmen ein, um Ihre Daten vor unbefugtem Zugriff zu schützen. Die Übertragung erfolgt verschlüsselt via HTTPS.</p>
+      <h3>7. Kontakt</h3>
+      <p>Bei Fragen zum Datenschutz: info@stadtfest-wohlen.ch oder schriftlich an das Festbüro, Gemeindehaus, 5610 Wohlen AG.</p>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: IMPRESSUM -->
+<div class="modal-ov" id="modal-imp">
+  <div class="modal-box">
+    <div class="modal-hd">
+      <div class="modal-title">Impressum</div>
+      <button class="modal-x" onclick="closeModal('modal-imp')">✕</button>
+    </div>
+    <div class="modal-bd">
+      <h3>Verantwortlich für den Inhalt</h3>
+      <p>OK-Komitee Stadtfest Wohlen AG<br>Gemeindehaus<br>5610 Wohlen AG<br>Schweiz</p>
+      <h3>Kontakt</h3>
+      <p>E-Mail: info@stadtfest-wohlen.ch<br>Telefon: +41 56 000 00 00<br>Öffnungszeiten Festbüro: Di–Fr, 09:00–12:00 Uhr</p>
+      <h3>Vertretungsberechtigte Person</h3>
+      <p>Hans Meier, Präsident OK-Komitee Stadtfest Wohlen AG</p>
+      <h3>Haftungsausschluss</h3>
+      <p>Trotz sorgfältiger Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt verlinkter Seiten sind ausschliesslich deren Betreiber verantwortlich.</p>
+      <h3>Urheberrecht</h3>
+      <p>Die auf dieser Website veröffentlichten Inhalte unterliegen dem schweizerischen Urheberrecht. Jede Verwendung ausserhalb des Urheberrechts bedarf der vorherigen Zustimmung des OK-Komitees.</p>
+      <h3>Bildnachweis</h3>
+      <p>Bildmaterial: Unsplash (royalty-free). Grafikdesign: OK-Komitee Stadtfest Wohlen AG.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+// COUNTDOWN
+function updateCD(){
+  const t=new Date('2027-09-18T17:00:00+02:00'),n=new Date(),d=t-n;
+  if(d<=0){document.getElementById('cd-d').textContent='0';document.getElementById('cd-h').textContent='0';document.getElementById('cd-m').textContent='0';document.getElementById('cd-s').textContent='0';return}
+  const days=Math.floor(d/864e5),hrs=Math.floor((d%864e5)/36e5),min=Math.floor((d%36e5)/6e4),sec=Math.floor((d%6e4)/1e3);
+  document.getElementById('cd-d').textContent=String(days).padStart(3,'0');
+  document.getElementById('cd-h').textContent=String(hrs).padStart(2,'0');
+  document.getElementById('cd-m').textContent=String(min).padStart(2,'0');
+  document.getElementById('cd-s').textContent=String(sec).padStart(2,'0');
+}
+setInterval(updateCD,1000);updateCD();
+
+// NAV SCROLL
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('sc',window.scrollY>60)});
+
+// MOBILE MENU
+function toggleMenu(){document.getElementById('nav-mob').classList.toggle('op')}
+function closeMenu(){document.getElementById('nav-mob').classList.remove('op')}
+
+// SCROLL REVEAL
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+
+// COUNTERS
+function animateCount(el){
+  const target=parseInt(el.dataset.t),dur=1800,step=target/(dur/16);let c=0;
+  const tm=setInterval(()=>{c+=step;if(c>=target){c=target;clearInterval(tm)}
+  el.textContent=Math.floor(c)>=1000?Math.floor(c).toLocaleString('de-CH'):Math.floor(c)},16);
+}
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting&&!e.target.dataset.done){e.target.dataset.done='1';animateCount(e.target)}}),{threshold:.5});
+document.querySelectorAll('.counter').forEach(el=>co.observe(el));
+
+// TABS
+function switchTab(grp,id){
+  const wrap=document.querySelector(`[data-tabs="${grp}"]`);
+  wrap.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('act'));
+  wrap.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('act'));
+  wrap.querySelector(`[data-tab-btn="${id}"]`).classList.add('act');
+  wrap.querySelector(`[data-tab-panel="${id}"]`).classList.add('act');
+}
+
+// ACTIVITY FILTER
+function filterActs(cat){
+  document.querySelectorAll('.fp').forEach(p=>p.classList.remove('act'));
+  document.querySelector(`.fp[data-filter="${cat}"]`).classList.add('act');
+  document.querySelectorAll('.act-c').forEach(c=>{
+    c.style.display=(cat==='alle'||c.dataset.category===cat)?'':'none';
+  });
+}
+
+// MAP FILTER
+function filterMap(cat){
+  document.querySelectorAll('.mfb').forEach(b=>b.classList.remove('act'));
+  document.querySelector(`.mfb[data-f="${cat}"]`).classList.add('act');
+  document.querySelectorAll('.map-pin-group').forEach(g=>{
+    g.style.opacity=(cat==='alle'||g.dataset.cat===cat)?'1':'0.18';
+    g.style.transition='opacity .3s ease';
+  });
+}
+
+// MAP TOOLTIP
+function showTip(e,t,d){
+  const tip=document.getElementById('map-tip'),wrap=document.getElementById('map-container');
+  document.getElementById('tip-t').textContent=t;
+  document.getElementById('tip-d').textContent=d;
+  const r=wrap.getBoundingClientRect();
+  let x=e.clientX-r.left+14,y=e.clientY-r.top-70;
+  if(x+180>r.width)x=r.width-190;if(y<10)y=10;
+  tip.style.left=x+'px';tip.style.top=y+'px';
+  tip.classList.add('vis');
+}
+function hideTip(){document.getElementById('map-tip').classList.remove('vis')}
+
+// MODALS
+function openModal(id){document.getElementById(id).classList.add('op');document.body.style.overflow='hidden'}
+function closeModal(id){document.getElementById(id).classList.remove('op');document.body.style.overflow=''}
+document.querySelectorAll('.modal-ov').forEach(ov=>ov.addEventListener('click',e=>{if(e.target===ov){ov.classList.remove('op');document.body.style.overflow=''}}));
+
+// ACTIVITY MODAL
+function openAct(card){
+  document.getElementById('act-modal-title').textContent=card.querySelector('h3').textContent;
+  document.getElementById('act-modal-em').textContent=card.querySelector('.act-em').textContent;
+  document.getElementById('act-modal-desc').textContent=card.dataset.desc||'';
+  const meta=document.getElementById('act-modal-meta');
+  meta.innerHTML='';
+  if(card.dataset.time){const s=document.createElement('span');s.className='pill pill-gl';s.textContent='🕐 '+card.dataset.time;meta.appendChild(s)}
+  if(card.dataset.location){const s=document.createElement('span');s.className='pill pill-gl';s.textContent='📍 '+card.dataset.location;meta.appendChild(s)}
+  openModal('modal-act');
+}
+
+// FORMS
+function submitForm(e,wrapId,okId){
+  e.preventDefault();
+  document.getElementById(wrapId).querySelector('form').style.display='none';
+  document.getElementById(okId).classList.add('vis');
+}
+
+// STEPPER
+function stepChange(btn,delta){
+  const st=btn.closest('.stepper'),v=st.querySelector('.stv'),h=st.querySelector('.stv-hidden');
+  let n=Math.max(1,Math.min(20,parseInt(v.textContent)+delta));
+  v.textContent=n;if(h)h.value=n;
+}
+
+// COOKIE
+if(!localStorage.getItem('sw-cookies'))document.getElementById('cookie').classList.add('vis');
+function acceptCookies(t){localStorage.setItem('sw-cookies',t);document.getElementById('cookie').classList.remove('vis')}
+
+// KEYBOARD ESC
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal-ov.op').forEach(m=>{m.classList.remove('op');document.body.style.overflow=''})});
+</script>
+</body>
+</html>
